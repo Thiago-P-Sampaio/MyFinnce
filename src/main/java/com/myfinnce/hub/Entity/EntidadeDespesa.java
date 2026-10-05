@@ -12,6 +12,7 @@ public class EntidadeDespesa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique = true)
     private Long idDespesa;
 
     @Column(nullable = false, length = 30)
